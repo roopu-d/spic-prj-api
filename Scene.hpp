@@ -60,7 +60,7 @@ namespace spic {
              * Return the name of the scene
              * @sharedapi
              */
-            virtual const std::string& Name() const;
+            virtual const std::string Name() const;
 
     private:
         std::vector<std::shared_ptr<GameObject>> contents;
