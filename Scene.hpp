@@ -55,8 +55,15 @@ namespace spic {
              */
             virtual void OnDeactivate() {};
 
+            /*
+             * Return the name of the scene
+             * @sharedapi
+             */
+            const std::string& Name() const;
+
     private:
         std::vector<std::shared_ptr<GameObject>> contents;
+        std::string name;
     };
 
 }
