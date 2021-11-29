@@ -4,6 +4,7 @@
 #include "Component.hpp"
 #include "Debug.hpp"
 #include "Engine.hpp"
+#include "Scene.hpp"
 #include "Transform.hpp"
 #include <iostream>
 #include <memory>

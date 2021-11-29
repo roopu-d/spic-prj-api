@@ -2,16 +2,15 @@
 #define SPIC_PRJ_API_CD_ENGINE_HPP
 
 #include "EngineConfig.hpp"
-#include "EventBus.hpp"
-#include "Scene.hpp"
-#include "PhysicsManager.hpp"
 #include <memory>
 #include <stack>
 
 namespace spic {
 
     class Renderer;
-    class CollisionChecker;
+    class EventBus;
+    class Scene;
+    class PhysicsManager;
 
     namespace Input {
         class InputHandler;

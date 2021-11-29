@@ -2,9 +2,9 @@
 #define CAMERA_H_
 
 #include "GameObject.hpp"
-#include "Color.hpp"
 
 namespace spic {
+    class Color;
 
     struct RenderTarget {
         int x;

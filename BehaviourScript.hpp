@@ -1,11 +1,12 @@
 #ifndef BEHAVIOURSCRIPT_H_
 #define BEHAVIOURSCRIPT_H_
 
-#include "Collider.hpp"
 #include "Component.hpp"
 #include <memory>
 
 namespace spic {
+    class Collider;
+
     class BehaviourScript : public Component {
         public:
             BehaviourScript();

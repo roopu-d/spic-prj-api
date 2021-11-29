@@ -2,11 +2,11 @@
 #define ANIMATOR_H_
 
 #include "Component.hpp"
-#include "Sprite.hpp"
 #include <vector>
 #include <memory>
 
 namespace spic {
+    class Sprite;
 
     /**
      * @brief A component which can play animated sequences of sprites.

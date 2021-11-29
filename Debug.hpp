@@ -1,11 +1,12 @@
 #ifndef DEBUG_H_
 #define DEBUG_H_
 
-#include "Point.hpp"
-#include "Color.hpp"
 #include <string>
+#include "Color.hpp"
 
 namespace spic {
+
+    class Point;
 
     /**
      * @brief Some convenient debugging functions.
