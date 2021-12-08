@@ -27,7 +27,7 @@ namespace spic {
         /**
          * @brief Constructor.
          * @param fps The amount of frames the animator will cycle though per second.
-         * @param sprites An list of sprites to loop through.
+         * @param spritesMap map of the states with the respective sprites vector
          * @sharedapi
          */
         Animator(int fps, const std::map<std::string, std::vector<std::string>>& spritesMap);
@@ -67,7 +67,7 @@ namespace spic {
         void Animate();
 
         /**
-         * @brief Set the new frames per second of the animator
+         * @brief Set the direction the sprites will face
          * @sharedapi
          */
         void FacingRight(bool newFacingRight);
