@@ -73,30 +73,35 @@ namespace spic {
         /**
          * Retrieve the EventBus with which to send events or listen to them.
          * @return The event bus.
+         * @sharedapi
          */
         std::unique_ptr<spic::EventBus>& EventBus();
 
         /**
          * Retrieve the PhysicsManager with which you can clear the physics world.
          * @return The physics manager.
+         * @sharedapi
          */
         const std::unique_ptr<spic::PhysicsManager>& PhysicsManager() const;
 
         /**
          * @note May NOT be used in the game, but since there is no package private it is public here.
          * @return The renderer.
+         * @sharedapi
          */
         const std::unique_ptr<spic::Renderer>& Renderer() const;
 
         /**
          * @note May NOT be used in the game, but since there is no package private it is public here.
          * @return The input handler.
+         * @sharedapi
          */
         const std::unique_ptr<spic::Input::InputHandler>& InputHandler() const;
 
         /**
          * @note May NOT be used in the game, but since there is no package private it is public here.
          * @return The audio manager.
+         * @sharedapi
          */
         const std::unique_ptr<spic::AudioManager>& AudioManager() const;
 
