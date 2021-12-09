@@ -47,20 +47,6 @@ namespace spic {
         void Stop();
 
         /**
-         * @brief Get the frames per second of the animator
-         * @return An integer representing the frames per second of the animator
-         * @sharedapi
-         */
-        int FPS() const;
-
-        /**
-         * @brief Set the new frames per second of the animator
-         * @param newFps An integer representing the new frames per second of the animator
-         * @sharedapi
-         */
-        void FPS(int newFps);
-
-        /**
          * @brief Get the state the animator is currently in
          * @return A string which defines the state the animator is currently in
          * @sharedapi
