@@ -22,7 +22,7 @@ namespace spic {
          * @param sprites An list of sprites to loop through.
          * @sharedapi
          */
-        Animator(int fps, const std::vector<std::shared_ptr<Sprite>>& sprites);
+        Animator(int fps, const std::vector <std::shared_ptr<Sprite>> &sprites);
 
         /**
          * @brief Constructor.
@@ -30,7 +30,7 @@ namespace spic {
          * @param spritesMap map of the states with the respective sprites vector
          * @sharedapi
          */
-        Animator(int fps, const std::map<std::string, std::vector<std::string>>& spritesMap);
+        Animator(int fps, const std::map <std::string, std::vector<std::string>> &spritesMap);
 
         /**
          * @brief Start playing the image sequence.
@@ -72,7 +72,7 @@ namespace spic {
          * @param newState the state the animator should be in
          * @sharedapi
          */
-        void CurrentState(const std::string& newState);
+        void CurrentState(const std::string &newState);
 
         /**
          * @brief Animate the game object according to the sprites in the vector or sprites map
@@ -84,7 +84,7 @@ namespace spic {
          * @brief Set the direction the sprites will face
          * @sharedapi
          */
-        void FacingRight(bool newFacingRight);
+        void FlipX(bool newFlipX);
 
     private:
         /**
@@ -93,7 +93,7 @@ namespace spic {
          */
         int fps;
 
-        std::vector<std::shared_ptr<Sprite>> sprites;
+        std::vector <std::shared_ptr<Sprite>> sprites;
 
         /**
          * @brief index of the current sprite in the current state
@@ -108,7 +108,7 @@ namespace spic {
         /**
          * @brief map of the states with the respective sprites vector
          */
-        std::map<std::string, std::vector<std::string>> spritesMap;
+        std::map <std::string, std::vector<std::string>> spritesMap;
 
         /**
          * @brief the time that has elapsed since the last frame
@@ -128,7 +128,7 @@ namespace spic {
         /**
          * @brief true if the object is facing right
          */
-        bool facingRight;
+        bool flipX;
     };
 
 }
