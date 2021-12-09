@@ -61,6 +61,20 @@ namespace spic {
         void FPS(int newFps);
 
         /**
+         * @brief Get the state the animator is currently in
+         * @return A string which defines the state the animator is currently in
+         * @sharedapi
+         */
+        std::string CurrentState() const;
+
+        /**
+         * @brief Set the state the animator is currently in
+         * @param newState the state the animator should be in
+         * @sharedapi
+         */
+        void CurrentState(const std::string& newState);
+
+        /**
          * @brief Animate the game object according to the sprites in the vector or sprites map
          * @sharedapi
          */
