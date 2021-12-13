@@ -106,6 +106,24 @@ namespace spic {
          */
         const std::unique_ptr<spic::AudioManager>& AudioManager() const;
 
+        /**
+         * Transition to a new scene with a transition scene in between.
+         *
+         * You could for example make a LevelTransitionScene which you'd give some data like the floor you'll go to.
+         * Then in the LevelTransitionScene you can just add game objects like you would normally do and show it.
+         *
+         * @tparam Transition The transition scene type.
+         * @tparam TransitionData The type of data for the transition scene.
+         * @tparam TransitionTimeMs How long the transition scene will be shown in milliseconds.
+         * @param data The data for the transition scene.
+         * @param scene The scene the user will go to after the transition scene.
+         */
+        template <typename Transition, typename TransitionData, size_t TransitionTimeMs = 1000>
+        void TransitionToScene(TransitionData data, std::shared_ptr<spic::Scene> scene) {
+            auto transition = std::make_shared<Transition>(data, TransitionTimeMs, scene);
+            PushScene(transition);
+        }
+
         void ToggleFps();
         void ToggleColliders();
     };
